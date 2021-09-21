@@ -1,0 +1,14 @@
+{
+    "bracket-pair-colorizer-2.colors": [
+
+        "Gold",
+        "Orchid",
+        "LightSkyBlue"
+    ],
+    "emmet.preferences": {
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.showSuggestionsAsSnippets": true,
+        "editor.snippetSuggestions": "top"
+    },
+    "emmet.showSuggestionsAsSnippets": true
+}
