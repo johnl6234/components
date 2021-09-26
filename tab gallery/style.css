@@ -1,0 +1,17 @@
+.main {
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.img-holder {
+    margin: .2rem;
+    overflow-y: hidden;
+}
+
+/*div {
+    border: 1px solid red
+}
+*/

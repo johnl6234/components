@@ -1,0 +1,75 @@
+.main {
+    min-height: 100vh;
+    background-color: rgb(56 56 56)
+}
+
+.main-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#prev-img,
+#curr-img,
+#next-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.img-holder {
+    margin: .2rem;
+    overflow-y: hidden;
+}
+
+    .img-holder img {
+        opacity: 0.3;
+    }
+
+.current {
+    opacity: 1 !important;
+}
+
+.hide {
+    display: none;
+}
+
+.fade-in {
+    animation: fade-in .8s ease-in;
+}
+
+.fade-out {
+    animation: fade-out .8s ease-in;
+}
+
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateX(0%)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+
+
+/*div {
+    border: 1px solid red
+}
+*/
