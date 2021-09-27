@@ -1,7 +1,7 @@
 # place file in project directory
 
 import os
-projectName = 'slider' # change to your project name
+projectName = 'headerSlider' # change to your project name
 os.chdir(projectName)
 
 with open('index.html','x') as index:
