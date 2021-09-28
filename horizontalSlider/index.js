@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     let dots = document.querySelectorAll('.dot');
     let arrows = document.querySelectorAll('.arrow');
     let sliderDiv = document.querySelector('.slider');
+    let interval = 6000;
 
     removeShow(images);
     images[imgCount].classList.add('show');
@@ -29,9 +30,9 @@ window.addEventListener('DOMContentLoaded', function () {
     // EventListeners for dots
     Array.from(dots).forEach(dot => {
         dot.addEventListener('click', function (e) {
-            imgCount = e.target.name;
+            imgCount = parseInt(e.target.name);
             updateSlider(images, imgCount, dots);
-            slideTimer.reset(4000);
+            slideTimer.reset(interval);
         })
     })
 
@@ -46,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 imgCount = images.length - 1
             }
             updateSlider(images, imgCount, dots);
-            slideTimer.reset(4000);
+            slideTimer.reset(interval);
         })
     })
 
